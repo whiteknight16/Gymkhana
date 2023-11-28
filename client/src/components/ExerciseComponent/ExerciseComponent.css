@@ -1,0 +1,41 @@
+.exerciseCard {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(237, 225, 225);
+    border-radius: 5px;
+}
+
+.exerciseCard:hover {
+    cursor: pointer;
+}
+
+.exerciseCard img {
+    width: 200px;
+}
+
+.exerciseData {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.details {
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(237, 225, 225);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+
+}

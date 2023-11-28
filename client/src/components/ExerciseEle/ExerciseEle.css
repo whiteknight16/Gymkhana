@@ -1,0 +1,77 @@
+.exerciseCard {
+    background-color: rgb(237, 225, 225);
+    width: 50vw;
+    height: 180px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row;
+    gap: 300px;
+    padding: 10px;
+    margin-left: 32vw;
+    margin-bottom: 35px;
+    max-width: 700px;
+}
+
+.exerciseCard .exercise-list-card-text {
+    color: white;
+    font-weight: bold;
+    width: 8px;
+}
+
+.striked {
+    text-decoration: line-through;
+}
+
+@media(max-width:1050px) {
+    .exerciseCard {
+        gap: 150px;
+    }
+}
+
+@media(max-width:800px) {
+    .exerciseCard {
+        gap: 130px;
+        height: 150px;
+
+    }
+
+    .exerciseCard img {
+        width: 30%;
+    }
+}
+
+@media(max-width:450px) {
+    .exerciseCard {
+        width: 80vw;
+        gap: 100px;
+        height: 150px;
+    }
+
+    .exerciseCard img {
+        width: 35%;
+    }
+}
+
+@media (max-width:380px) {
+    .exerciseCard {
+        width: 85vw;
+    }
+}
+
+@media (max-width:350px) {
+    .exerciseCard {
+        width: 85vw;
+    }
+
+
+    .exerciseCard h3 {
+        font-size: 0.75rem;
+    }
+
+    .exerciseCard p {
+        font-size: 0.75rem;
+    }
+
+
+}

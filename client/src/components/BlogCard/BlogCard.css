@@ -1,0 +1,61 @@
+.eachBlogCard {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(237, 225, 225);
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    gap: 100px;
+}
+
+.eachBlogCard img {
+    width: 30%;
+    padding-bottom: 30px;
+
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media(max-width: 800px) {
+    .eachBlogCard {
+        min-height: fit-content;
+        width: 600px;
+        gap: 100px;
+    }
+}
+
+@media(max-width: 450px) {
+    .eachBlogCard {
+        min-height: fit-content;
+        width: 130vw;
+        gap: 100px;
+    }
+
+    .eachBlogCard img {
+        position: relative;
+        left: 10px;
+        width: 20%;
+        height: 50%;
+        font-size: 20px;
+    }
+
+    .eachBlogData {
+        width: 40px;
+        font-size: 0.7rem;
+        overflow-x: hidden;
+        position: relative;
+        left: -30px;
+    }
+}

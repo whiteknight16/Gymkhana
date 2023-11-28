@@ -1,0 +1,15 @@
+.addForm {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.addForm input,
+.addForm textarea {
+    width: 300px;
+    height: 30px;
+}

@@ -1,0 +1,91 @@
+.eachBlogCard {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80vw;
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(237, 225, 225);
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    gap: 100px;
+}
+
+.eachBlogCard img {
+    width: 300px;
+    height: 150px;
+    padding-bottom: 30px;
+
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.editDelete {
+    position: relative;
+    left: -250px
+}
+
+.eachBlogData p {
+    max-width: 60vw;
+    min-width: 60vw;
+}
+
+.addButton {
+    border-radius: 5px;
+    background-color: rgb(130, 208, 13);
+    color: white;
+    width: 50px;
+    margin-top: 10px;
+    width: 70px;
+    gap: 10px;
+}
+
+.addButton:hover {
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+
+@media(max-width: 800px) {
+    .eachBlogData p {
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+
+    .eachBlogCard img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .editDelete {
+        left: -350px;
+    }
+}
+
+@media(max-width: 450px) {
+    .eachBlogCard {
+        min-width: fit-content;
+    }
+
+    .eachBlogData p {
+        min-width: fit-content;
+    }
+
+    .eachBlogCard img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .editDelete {
+        left: 40px;
+    }
+}

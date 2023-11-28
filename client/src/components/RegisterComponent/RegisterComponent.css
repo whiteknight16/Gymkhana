@@ -1,0 +1,41 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f8f8;
+}
+
+.register-container input {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.register-container input::placeholder {
+    color: #aaa;
+}
+
+.register-container button {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.register-container button:hover {
+    background-color: #45a049;
+}

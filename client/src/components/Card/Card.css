@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.card {
+    min-width: 288px;
+    min-height: 240px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    flex-flow: column;
+}
+
+.card-button {
+    color: white;
+    background-color: rgb(42, 195, 31);
+    min-width: 250px;
+    margin-left: 19px;
+    margin-bottom: 3px;
+    border-radius: 35px;
+    font-family: 'Monteserrat';
+    font-size: larger;
+}
+
+.card-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-h3 {
+    color: white;
+    width: 6px;
+
+}
+
+.card-h2 {
+    color: white;
+    width: 5px;
+    position: relative;
+    top: 30px;
+}
+
+img {
+    width: 200px;
+    aspect-ratio: 3/2;
+    position: relative;
+    top: 20px;
+    left: 95px;
+
+}
+
+.card-p {
+    width: 200px;
+    color: white;
+}

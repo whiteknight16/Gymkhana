@@ -1,0 +1,45 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 50px;
+}
+
+.buttons button {
+    width: 100px;
+    justify-content: center;
+    background-color: blueviolet;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.buttons button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.exerciseAdd {
+    width: 100px;
+    justify-content: center;
+    background-color: greenyellow;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.exerciseAdd:hover {
+    background-color: green;
+    cursor: pointer;
+}

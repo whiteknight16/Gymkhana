@@ -1,0 +1,15 @@
+.editForm {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.editForm input,
+.editForm textarea {
+    width: 300px;
+    height: 30px;
+}
