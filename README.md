@@ -1,4 +1,4 @@
-#Structure
+# Structure
 Consists of two folder client and server client for frontend and server for backend
 
 <h1>How to start</h1>
