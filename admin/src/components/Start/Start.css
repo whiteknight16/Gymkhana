@@ -1,0 +1,29 @@
+.start-buttons {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 10px;
+}
+
+
+.start-button {
+    width: 300px;
+    border-radius: 5px;
+    height: 30px;
+
+    background-color: lightgreen;
+    color: rgb(150, 132, 132);
+    font-weight: 1000;
+
+}
+
+.start-button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+link {
+    text-decoration: none;
+}

@@ -1,0 +1,68 @@
+.addEditButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addEditButtons button {
+    margin: 0 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+
+.form {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.form input,
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.eachExercise {
+    width: 30vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.eachExercise img {
+    width: 160px;
+    height: 160px;
+}
+
+.eachExercise iframe {
+    width: 160px;
+    height: 160px;
+}

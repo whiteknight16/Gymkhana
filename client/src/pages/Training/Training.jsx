@@ -1,37 +1,50 @@
 import React from 'react'
-import "./Training.css"
-import Footer from '../../components/Footer/Footer'
+import axios from 'axios'
+import conf from "../../conf/conf"
+import { useState, useEffect } from 'react'
 import Header from '../../components/Header/Header'
-import Card from '../../components/Card/Card'
 import Stats from '../../components/Stats/Stats'
 import ExerciseCard from '../../components/ExerciseCard/ExerciseCard'
-import { Link, useNavigate } from 'react-router-dom'
-function Home() {
-    const navigate = useNavigate()
+import Footer from '../../components/Footer/Footer'
+import "./Training.css"
+function SubItems({ heading }) {
+    const [item, setItem] = useState([])
+    useEffect(() => {
+        axios.get(`${conf.baseURL}/api/v1/exerciseSubItems/`).then(res => setItem(res.data.exerciseSubItem.filter(ele => ele.parent.toUpperCase() === heading.toUpperCase())))
+    }, [item])
     return (
         <div>
-            <Header>HOME WORKOUT</Header>
-            <Stats className="stats" count="3" cal="20" time="30" />
-            <h1 className='training-h1'>7x4 CHALLENGE</h1>
-            <div className='cards'>
-                <Card image="/body-builder.jpg" message={"Est laborum velit"}>FULL BODY 7X4 CHALLENGE</Card>
-                <Card image="/legs.jpg" message={"Exercitation  "}>LOWER BODY 7X4 CHALLENGE</Card>
-            </div >
+            {item.map(ele => (
+                <ExerciseCard image={ele.image} text={ele.text} level={ele.level} about={ele.about} key={ele._id} target={ele.target} />
+            ))}
+        </div>
+    )
+}
+
+
+function TestTraining() {
+    const [data, setData] = useState([])
+    useEffect(() => {
+        axios.get(`${conf.baseURL}/api/v1/headings`).then(res => setData(res.data.heading))
+    }, [])
+    return (
+        <>
             <div>
-                <h1 className='training-h1'>Beginner</h1>
-                <ExerciseCard image={"/abs_beg.jpg"} text={"ABS BEGINNER"} level={1} link="/absbeginner" />
-                <ExerciseCard image={"/chest_beg.jpg"} text={"CHEST BEGINNER"} level={1} link="/chestbeginner" />
-                <ExerciseCard image={"/legs_beg.jpg"} text={"LEG BEGINNER"} level={1} link="/legsbeginner" />
-                <h1 className='training-h1'>Intermediate</h1>
-                <ExerciseCard image={"/abs_inter.jpg"} text={"ABS INTERMEDIATE"} level={2} link="/absinter" />
-                <ExerciseCard image={"/chest_inter.jpg"} text={"CHEST INTERMEDIATE"} level={2} link="/chestinter" />
-                <ExerciseCard image={"/legs_inter.jpg"} text={"LEG INTERMEDIATE"} level={2} link="/legsinter" />
+                <Header>HOME WORKOUT</Header>
+                <Stats className="stats" />
+                {data.map(ele => (
+                    <>
+                        <h1 className='training-h1'>{ele.heading}</h1>
+                        <SubItems heading={ele.heading} />
+                    </>
+                ))}
             </div>
             <h1 className='training-h1'>Custom Routine </h1>
             <div style={{ marginBottom: "70px" }}><ExerciseCard image={"/gym.jpeg"} text={"CUSTOM ROUTINE"} level="none" link="/customroutine" /></div>
             <Footer />
-        </div >
+        </>
+
     )
 }
 
-export default Home
+export default TestTraining

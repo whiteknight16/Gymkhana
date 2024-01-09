@@ -23,21 +23,13 @@ const router = createBrowserRouter(
       <Route path='/discover/:id' element={<DetailBlog />}></Route>
       <Route path='/discoverlog' element={<Discover />}></Route>
       <Route path='/report' element={<Report />}></Route>
-      <Route path='/absbeginner' element={<Exercise />}></Route>
-      <Route path='/absinter' element={<Exercise />}></Route>
-      <Route path='/chestbeginner' element={<Exercise />}></Route>
-      <Route path='/chestinter' element={<Exercise />}></Route>
-      <Route path='/legsbeginner' element={<Exercise />}></Route>
-      <Route path='/legsinter' element={<Exercise />}></Route>
       <Route path='/auth/login' element={<Login />}></Route>
       <Route path='/auth/register' element={<Register />}></Route >
       <Route path='/edit/:id' element={<Edit />}></Route >
       <Route path='/add' element={<Add />}></Route >
       <Route path='/customAdd' element={<Custom />}></Route >
       <Route path='/customroutine' element={<CustomExercises />}></Route >
-
-
-
+      <Route path='/particular/:something' element={<Exercise />}></Route >
     </>
   )
 )

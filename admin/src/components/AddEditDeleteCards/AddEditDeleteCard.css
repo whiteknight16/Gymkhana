@@ -1,0 +1,81 @@
+.addEditButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addEditButtons button {
+    margin: 0 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 5px;
+    height: 40px;
+    width: 110px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form select,
+form input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.editContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 10px;
+    background-color: tomato;
+    width: 80vw;
+    gap: 10px;
+    margin-top: 30px;
+}

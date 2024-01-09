@@ -4,6 +4,8 @@ const port = 3000
 const exerciseList = require('./routes/exerciseList')
 const login = require('./routes/login')
 const blog = require('./routes/blog')
+const headings = require('./routes/headings')
+const exerciseSubItems = require('./routes/exerciseSubItems')
 const cors = require('cors');
 
 
@@ -15,6 +17,8 @@ app.use(express.json())
 app.use("/api/v1/exerciselist", exerciseList)
 app.use("/api/v1/auth", login)
 app.use("/api/v1/blog", blog)
+app.use("/api/v1/headings", headings)
+app.use("/api/v1/exerciseSubItems", exerciseSubItems)
 const start = async () => {
     try {
         await connectDb(process.env.CONNECTION_STRING)

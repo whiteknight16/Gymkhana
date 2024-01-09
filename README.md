@@ -1,4 +1,4 @@
-# Structure
+#Structure
 Consists of two folder client and server client for frontend and server for backend
 
 <h1>How to start</h1>
@@ -25,14 +25,14 @@ Consists of two folder client and server client for frontend and server for back
 <li>package.json</li>
 <li>vite.config.js: Configuration file for vite</li>
 
-## Details of src folder
+##Details of src folder
 
 <li>components folder:It contains various components used in program the detail for each component is listed with it</li>
 <li>conf folder: It contains conf.js and is used to access env variables</li>
 <li>pages folder: It is used to finally load each page </li>
 <li>main.jsx: It is the head jsx file </li>
 
-### Various Components:
+###Various Components:
 
 <li>AddComponent:This is used to add the blog</li>
 <li>BlogCard:Used to render blogs in discover section</li>
@@ -53,7 +53,7 @@ Consists of two folder client and server client for frontend and server for back
 <li>StartAndEndExercise:Starts and Ends the timer</li>
 <li>Stats:Used to display various stats</li>
 
-### Various Pages
+###Various Pages
 
 <li>Add</li>
 <li>Custom</li>
@@ -102,5 +102,8 @@ It sets up routes for exercise lists, login, and blogs under "/api/v1/exerciseli
 It defines an asynchronous function start that connects to the MongoDB database using the connection string from the environment variables and starts the server.
 It then calls the start function to start the server. If there's an error during the database connection or server startup, it logs the error to the console.
 
-### Secret route
-THere is a secret route /auth/login which allows you some additional functionalities and perform CRUD operation over discover section elements
+## Seceret route
+
+There is a route /auth/login which gives you extra features for discover section like performing crud operations
+
+You can check out all the routes in main.jsx file 
